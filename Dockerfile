@@ -14,4 +14,4 @@ RUN apt-get update && \
     PATH=~/.rakudobrew/bin:$PATH rakudobrew build-panda && \
     echo ok.
 
-ENV PATH="~/.rakudobrew/bin:$PATH"
+ENV PATH="/root/.rakudobrew/bin:$PATH"

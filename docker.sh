@@ -5,7 +5,7 @@ CONTAINER_NAME=perl6
 
 run() {
     docker rm -f $CONTAINER_NAME > /dev/null 2>/dev/null
-    docker run -ti --name $CONTAINER_NAME $IMAGE_NAME "$@"
+    docker run -v $PWD:/run -ti --name $CONTAINER_NAME $IMAGE_NAME "$@"
 }
 
 case $1 in

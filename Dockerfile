@@ -15,3 +15,5 @@ RUN apt-get update && \
     echo ok.
 
 ENV PATH="/root/.rakudobrew/bin:$PATH"
+
+WORKDIR /run
